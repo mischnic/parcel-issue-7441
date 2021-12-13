@@ -1,0 +1,391 @@
+// @import "font";
+// @import "custom";
+
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/utilities";
+
+@import "../node_modules/bootstrap/scss/progress";
+
+// @media (prefers-reduced-motion: no-preference) {
+// 	:root {
+// 		scroll-behavior: auto !important;
+// 	}
+// }
+
+// @import "../node_modules/bootstrap/scss/bootstrap.scss";
+// @import "../node_modules/animate.css/animate.css";
+// @import "../node_modules/@fortawesome/fontawesome-free/scss/variables";
+
+// h1,
+// h2,
+// h3 {
+// 	font-family: $font-family-header;
+// 	font-weight: bold;
+// 	a {
+// 		text-decoration: none !important;
+// 	}
+// }
+
+// h4,
+// h5,
+// h6 {
+// 	font-family: $font-family-header;
+// 	font-weight: normal;
+// 	a {
+// 		text-decoration: none !important;
+// 	}
+// }
+
+// .logo-svart {
+// 	fill: $black;
+// }
+
+// .logo-hvit {
+// 	fill: $white;
+// }
+
+// @each $color, $value in $theme-colors {
+// 	.background-#{$color} {
+// 		background-color: $value;
+// 	}
+// 	.fill-#{$color} {
+// 		fill: $value;
+// 	}
+// 	.stroke-#{$color} {
+// 		stroke: $value;
+// 	}
+// }
+
+// @each $color, $value in $colors {
+// 	.background-#{$color} {
+// 		background-color: $value;
+// 	}
+// 	.fill-#{$color} {
+// 		fill: $value;
+// 	}
+// 	.stroke-#{$color} {
+// 		stroke: $value;
+// 	}
+// }
+
+// // ============================================================================
+// // Bootstrap tweaks
+// //
+
+// .btn {
+// 	color: $light;
+// 	margin: 1rem;
+// 	&:hover {
+// 		color: $body-color;
+// 		background-color: $light;
+// 		text-decoration: if($link-hover-decoration == underline, none, null);
+// 	}
+// }
+
+// .container > .container-fluid {
+// 	text-align: center;
+// 	padding: 3rem;
+// }
+
+// // .menu-target {
+// // 	width: 1px !important;
+// // 	height: 1px !important;
+// // 	padding: 0px !important;
+// // 	margin: 0px !important;
+// // 	border: 0;
+// // 	&:target {
+// // 		@extend .d-block;
+// // 	}
+// // }
+
+// .menu-target {
+// 	scroll-margin-top: 80px;
+// }
+
+// .nav-link {
+// 	cursor: pointer;
+// }
+
+// .navbar-toggler {
+// 	margin-right: 1rem;
+// }
+
+// body {
+// 	overflow-x: hidden !important;
+// }
+
+// .main {
+// 	max-width: 100% !important;
+// 	overflow-x: hidden !important;
+// }
+
+// .container, .container-fluid {
+// 	overflow-x: hidden !important;
+// }
+
+// body > .container {
+// 	padding-top: 2rem;
+// 	padding-bottom: 2rem;
+// }
+
+// .bg-dark {
+// 	h1,
+// 	h2,
+// 	h3,
+// 	h4,
+// 	h5,
+// 	h6 {
+// 		@extend .text-white;
+// 	}
+// 	p {
+// 		@extend .text-secondary;
+// 	}
+// }
+
+// #meny {
+// 	.nav-link {
+// 		font-family: "Header" !important;
+// 		font-weight: normal !important;
+// 		// padding-right: 1rem !important;
+// 		// padding-left: 1rem !important;
+// 		text-transform: uppercase;
+// 		color: $black !important;
+
+// 		&:hover {
+// 			color: $purple !important;
+// 			text-decoration: underline !important;
+// 		}
+// 	}
+// }
+
+// #sponsor {
+// 	img {
+// 		width: 140px;
+// 	}
+// 	svg {
+// 		width: 140px;
+// 	}
+// }
+
+// .container ul {
+// 	list-style-type: decimal;
+// 	ul {
+// 		list-style-type: lower-latin;
+// 	}
+// }
+
+// .wave {
+// 	width: 70%;
+// 	@extend .mx-auto;
+// 	display: block;
+// }
+
+// .swiggle {
+// 	width: 10%;
+// 	display: inline;
+// 	max-height: 40px;
+// }
+
+// // .trener {
+// // 	object-fit: cover;
+// // 	width: 100%;
+// // 	height: 300px;
+// // }
+
+// // ============================================================================
+// // Hero
+// //
+
+// .block-top {
+// 	-webkit-mask: url("../images/dekorative/block-top.svg") no-repeat 100% 100%;
+// 	mask: url("../images/dekorative/block-top.svg") no-repeat 100% 100%;
+// 	-webkit-mask-size: cover;
+// 	mask-size: cover;
+// 	z-index: -50;
+// 	// background-image: url("../images/dekorative/block-top.svg");
+// 	// background-repeat: no-repeat;
+// 	// background-size: cover;
+// 	height: 190px;
+// 	width: 100%;
+// 	margin-top: -60px;
+// 	margin-bottom: -4px;
+// 	overflow: hidden;
+// 	display: block;
+// }
+
+// .block-bottom {
+// 	-webkit-mask: url("../images/dekorative/block-bottom.svg") no-repeat 100% 100%;
+// 	mask: url("../images/dekorative/block-bottom.svg") no-repeat 100% 100%;
+// 	-webkit-mask-size: cover;
+// 	mask-size: cover;
+// 	z-index: -50;
+// 	// background-image: url("../images/dekorative/block-bottom.svg");
+// 	// background-repeat: no-repeat;
+// 	// background-size: cover;
+// 	height: 190px;
+// 	width: 100%;
+// 	overflow: hidden;
+// 	display: block;
+// }
+
+// #hero {
+// 	background-color: transparent;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	flex-direction: column;
+// 	padding-top: 3rem;
+// 	padding-bottom: 3rem;
+// 	overflow: hidden;
+// 	min-height: 100vh;
+
+// 	video {
+// 		position: fixed;
+// 		top: 50%;
+// 		left: 50%;
+// 		min-width: 100%;
+// 		min-height: 100%;
+// 		width: auto;
+// 		height: auto;
+// 		z-index: -100;
+// 		-ms-transform: translateX(-50%) translateY(-50%);
+// 		-moz-transform: translateX(-50%) translateY(-50%);
+// 		-webkit-transform: translateX(-50%) translateY(-50%);
+// 		transform: translateX(-50%) translateY(-50%);
+// 	}
+// }
+
+// #trenere {
+// 	h4 {
+// 		font-weight: bold;
+// 		margin: 1rem 0 0 0;
+// 	}
+// 	span {
+// 		display: block;
+// 		margin-bottom: 1rem;
+// 		@include font-size($btn-font-size-sm);
+// 	}
+// }
+
+// // ============================================================================
+// // Ikoner
+// // @import "../node_modules/@fortawesome/fontawesome-free/scss/icons"
+
+// @font-face {
+// 	font-family: "Icons";
+// 	font-style: normal;
+// 	font-weight: 900;
+// 	font-display: $fa-font-display;
+// 	src: url("#{$fa-font-path}/fa-solid-900.woff2") format("woff2");
+// }
+
+// @font-face {
+// 	font-family: "Icons";
+// 	font-style: normal;
+// 	font-weight: 400;
+// 	font-display: $fa-font-display;
+// 	src: url("#{$fa-font-path}/fa-brands-400.woff2") format("woff2");
+// }
+
+// .fa {
+// 	font-family: "Icons";
+// 	font-weight: 900;
+// 	margin-right: 10px;
+// }
+// .ff {
+// 	font-family: "Icons";
+// 	font-weight: 900;
+// }
+
+// .#{$fa-css-prefix}-smile:before {
+// 	content: fa-content($fa-var-smile);
+// }
+// .#{$fa-css-prefix}-thumbs-up:before {
+// 	content: fa-content($fa-var-thumbs-up);
+// }
+// .#{$fa-css-prefix}-phone:before {
+// 	content: fa-content($fa-var-phone);
+// }
+// .#{$fa-css-prefix}-check:before {
+// 	content: fa-content($fa-var-check);
+// }
+// .#{$fa-css-prefix}-chevron-down:before {
+// 	content: fa-content($fa-var-chevron-down);
+// }
+// .#{$fa-css-prefix}-quote-right:before {
+// 	content: fa-content($fa-var-quote-right);
+// }
+// .#{$fa-css-prefix}-receipt:before {
+// 	content: fa-content($fa-var-receipt);
+// }
+// .#{$fa-css-prefix}-link:before {
+// 	content: fa-content($fa-var-link);
+// }
+// .#{$fa-css-prefix}-clock:before {
+// 	content: fa-content($fa-var-clock);
+// }
+// .#{$fa-css-prefix}-piggy-bank:before {
+// 	content: fa-content($fa-var-piggy-bank);
+// }
+// .#{$fa-css-prefix}-truck:before {
+// 	content: fa-content($fa-var-truck);
+// }
+// .#{$fa-css-prefix}-shopping-cart:before {
+// 	content: fa-content($fa-var-shopping-cart);
+// }
+// .#{$fa-css-prefix}-arrow-left:before {
+// 	content: fa-content($fa-var-arrow-left);
+// }
+// .#{$fa-css-prefix}-arrow-right:before {
+// 	content: fa-content($fa-var-arrow-right);
+// }
+// .#{$fa-css-prefix}-map-marked-alt:before {
+// 	content: fa-content($fa-var-map-marked-alt);
+// }
+// .#{$fa-css-prefix}-tractor:before {
+// 	content: fa-content($fa-var-tractor);
+// }
+// .#{$fa-css-prefix}-exclamation-triangle:before {
+// 	content: fa-content($fa-var-exclamation-triangle);
+// }
+// .#{$fa-css-prefix}-bug:before {
+// 	content: fa-content($fa-var-bug);
+// }
+// .#{$fa-css-prefix}-box-open:before {
+// 	content: fa-content($fa-var-box-open);
+// }
+// .#{$fa-css-prefix}-envelope:before {
+// 	content: fa-content($fa-var-envelope);
+// }
+// .#{$fa-css-prefix}-plus:before {
+// 	content: fa-content($fa-var-plus);
+// }
+// .#{$fa-css-prefix}-question-circle:before {
+// 	content: fa-content($fa-var-question-circle);
+// }
+// .#{$fa-css-prefix}-instagram:before {
+// 	content: fa-content($fa-var-instagram);
+// 	font-weight: 400;
+// }
+// .#{$fa-css-prefix}-facebook:before {
+// 	content: fa-content($fa-var-facebook);
+// 	font-weight: 400;
+// }
+
+
+// #footer {
+// 	color: $white;
+// 	background-attachment: fixed;
+// 	background-image: url("../images/dekorative/one.jpg");
+// 	background-origin: border-box;
+// 	background-repeat: no-repeat;
+// 	background-size: cover;
+// 	background-position-y: top;
+
+// 	img {
+// 		height: 140px;
+// 	}
+// }

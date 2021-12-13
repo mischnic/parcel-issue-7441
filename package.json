@@ -3,7 +3,8 @@
 	"version": "1.0.0",
 	"description": "",
 	"scripts": {
-		"build": "parcel build sass/main.scss"
+		"build": "parcel build sass/main.scss",
+		"build-postcss": "postcss x.css"
 	},
 	"author": "",
 	"devDependencies": {
@@ -11,10 +12,8 @@
 		"bootstrap": "^5.1.3",
 		"parcel": "^2.0.0-nightly.942",
 		"postcss": "^8.4.5",
+		"postcss-cli": "^9.1.0",
 		"postcss-preset-env": "^7.0.1",
 		"sass": "^1.45.0"
-	},
-	"dependencies": {
-		"postcss-cli": "^9.1.0"
 	}
 }
